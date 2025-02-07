@@ -1,11 +1,18 @@
 {
   "dependencies": {
     "@preline/carousel": "^2.5.2",
+    "@preline/overlay": "^2.5.2",
+    "@preline/stepper": "^2.5.2",
     "@tailwindcss/cli": "^4.0.3",
     "preline": "^2.7.0",
     "tailwindcss": "^4.0.3"
   },
   "devDependencies": {
     "@tailwindcss/forms": "^0.5.10"
+  },
+  "scripts": {
+    "watch": "tailwindcss -i ./assets/css/input.css -o ./assets/css/style.css --watch",
+    "build": "tailwindcss -i ./assets/css/input.css -o ./assets/css/style.css",
+    "production": "tailwindcss -i ./assets/css/input.css -o ./assets/css/style.css --minify"
   }
 }

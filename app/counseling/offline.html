@@ -1,0 +1,740 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FARSA - Offline Counseling</title>
+
+    <link rel="stylesheet" href="./../../assets/css/style.css" />
+    <link rel="stylesheet" href="./../../assets/css/min.css" />
+</head>
+
+<body>
+
+    <!-- ========== HEADER ========== -->
+    <header class="sticky top-0 inset-x-0 flex flex-wrap md:justify-start md:flex-nowrap z-50 w-full text-sm mb-8">
+        <nav
+            class="mt-4 relative max-w-2xl w-full bg-white border border-gray-200 rounded-[2rem] mx-2 py-2.5 flex items-center justify-between md:py-0 md:px-4 md:mx-auto">
+            <div class="px-4 md:px-0 flex justify-between items-center">
+                <div class="flex items-center">
+                    <!-- Logo -->
+                    <a class="flex-none rounded-md inline-block font-semibold focus:outline-none focus:opacity-80"
+                        href="../templates/personal/index.html" aria-label="Preline">
+                        <img src="./../../assets/img/farsa logo.svg" alt="" class="w-24">
+                    </a>
+                    <!-- End Logo -->
+                </div>
+            </div>
+
+            <div id="hs-navbar-header-floating" class="hs-collapse overflow-hidden transition-all duration-300 "
+                aria-labelledby="hs-navbar-header-floating-collapse">
+                <div
+                    class="flex flex-col md:flex-row md:items-center md:justify-end gap-2 md:gap-3 md:mt-0 py-2 md:py-0 md:ps-7">
+                    <a class="py-0.5 md:py-3 px-4 md:px-1 border-s-2 md:border-s-0 md:border-b-2 border-transparent text-gray-500 hover:text-gray-800 focus:outline-none"
+                        href="./../auth/signIn.html">Sign In</a>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <!-- ========== END HEADER ========== -->
+
+    <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center my-8">
+        <h1 class="text-xl md:text-4xl font-bold">Help us match you to the right therapist</h1>
+        <p class="py-8 text-sm font-medium text-gray-500">
+            It's important to have a therapist who you can establish a personal connection with. The following questions
+            are designed to help match you to a licensed therapist based on your needs and personal preferences.
+        </p>
+
+        <!-- Stepper -->
+        <div data-hs-stepper="">
+            <!-- Stepper Nav -->
+            <ul class="relative flex flex-row gap-x-2">
+                <li class="flex items-center gap-x-2 shrink basis-0 flex-1 group" data-hs-stepper-nav-item='{
+                        "index": 1
+                    }'>
+                    <span class="min-w-7 min-h-7 group inline-flex items-center text-xs align-middle">
+                        <span
+                            class="size-7 flex justify-center items-center shrink-0 bg-gray-100 font-medium text-gray-800 rounded-full group-focus:bg-gray-200 hs-stepper-active:bg-primary hs-stepper-active:text-white hs-stepper-success:bg-primary hs-stepper-success:text-white hs-stepper-completed:bg-teal-500 hs-stepper-completed:group-focus:bg-teal-600">
+                            <span class="hs-stepper-success:hidden hs-stepper-completed:hidden">1</span>
+                            <svg class="hidden shrink-0 size-3 hs-stepper-success:block"
+                                xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round"
+                                stroke-linejoin="round">
+                                <polyline points="20 6 9 17 4 12"></polyline>
+                            </svg>
+                        </span>
+                        <span class="ms-2 text-sm font-medium text-gray-800">
+                            Step
+                        </span>
+                    </span>
+                    <div
+                        class="w-full h-px flex-1 bg-gray-200 group-last:hidden hs-stepper-success:bg-primary hs-stepper-completed:bg-teal-600">
+                    </div>
+                </li>
+
+                <li class="flex items-center gap-x-2 shrink basis-0 flex-1 group" data-hs-stepper-nav-item='{
+                        "index": 2
+                    }'>
+                    <span class="min-w-7 min-h-7 group inline-flex items-center text-xs align-middle">
+                        <span
+                            class="size-7 flex justify-center items-center shrink-0 bg-gray-100 font-medium text-gray-800 rounded-full group-focus:bg-gray-200 hs-stepper-active:bg-primary hs-stepper-active:text-white hs-stepper-success:bg-primary hs-stepper-success:text-white hs-stepper-completed:bg-teal-500 hs-stepper-completed:group-focus:bg-teal-600">
+                            <span class="hs-stepper-success:hidden hs-stepper-completed:hidden">2</span>
+                            <svg class="hidden shrink-0 size-3 hs-stepper-success:block"
+                                xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round"
+                                stroke-linejoin="round">
+                                <polyline points="20 6 9 17 4 12"></polyline>
+                            </svg>
+                        </span>
+                        <span class="ms-2 text-sm font-medium text-gray-800">
+                            Step
+                        </span>
+                    </span>
+                    <div
+                        class="w-full h-px flex-1 bg-gray-200 group-last:hidden hs-stepper-success:bg-primary hs-stepper-completed:bg-teal-600">
+                    </div>
+                </li>
+
+                <li class="flex items-center gap-x-2 shrink basis-0 flex-1 group" data-hs-stepper-nav-item='{
+                    "index": 3
+                    }'>
+                    <span class="min-w-7 min-h-7 group inline-flex items-center text-xs align-middle">
+                        <span
+                            class="size-7 flex justify-center items-center shrink-0 bg-gray-100 font-medium text-gray-800 rounded-full group-focus:bg-gray-200 hs-stepper-active:bg-primary hs-stepper-active:text-white hs-stepper-success:bg-primary hs-stepper-success:text-white hs-stepper-completed:bg-teal-500 hs-stepper-completed:group-focus:bg-teal-600">
+                            <span class="hs-stepper-success:hidden hs-stepper-completed:hidden">3</span>
+                            <svg class="hidden shrink-0 size-3 hs-stepper-success:block"
+                                xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round"
+                                stroke-linejoin="round">
+                                <polyline points="20 6 9 17 4 12"></polyline>
+                            </svg>
+                        </span>
+                        <span class="ms-2 text-sm font-medium text-gray-800">
+                            Step
+                        </span>
+                    </span>
+                    <div
+                        class="w-full h-px flex-1 bg-gray-200 group-last:hidden hs-stepper-success:bg-primary hs-stepper-completed:bg-teal-600">
+                    </div>
+                </li>
+
+                <li class="flex items-center gap-x-2 shrink basis-0 flex-1 group" data-hs-stepper-nav-item='{
+                    "index": 4
+                    }'>
+                    <span class="min-w-7 min-h-7 group inline-flex items-center text-xs align-middle">
+                        <span
+                            class="size-7 flex justify-center items-center shrink-0 bg-gray-100 font-medium text-gray-800 rounded-full group-focus:bg-gray-200 hs-stepper-active:bg-primary hs-stepper-active:text-white hs-stepper-success:bg-primary hs-stepper-success:text-white hs-stepper-completed:bg-teal-500 hs-stepper-completed:group-focus:bg-teal-600">
+                            <span class="hs-stepper-success:hidden hs-stepper-completed:hidden">4</span>
+                            <svg class="hidden shrink-0 size-3 hs-stepper-success:block"
+                                xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round"
+                                stroke-linejoin="round">
+                                <polyline points="20 6 9 17 4 12"></polyline>
+                            </svg>
+                        </span>
+                        <span class="ms-2 text-sm font-medium text-gray-800">
+                            Step
+                        </span>
+                    </span>
+                    <div
+                        class="w-full h-px flex-1 bg-gray-200 group-last:hidden hs-stepper-success:bg-primary hs-stepper-completed:bg-teal-600">
+                    </div>
+                </li>
+
+                <li class="flex items-center gap-x-2 shrink basis-0 flex-1 group" data-hs-stepper-nav-item='{
+                    "index": 5
+                    }'>
+                    <span class="min-w-7 min-h-7 group inline-flex items-center text-xs align-middle">
+                        <span
+                            class="size-7 flex justify-center items-center shrink-0 bg-gray-100 font-medium text-gray-800 rounded-full group-focus:bg-gray-200 hs-stepper-active:bg-primary hs-stepper-active:text-white hs-stepper-success:bg-primary hs-stepper-success:text-white hs-stepper-completed:bg-teal-500 hs-stepper-completed:group-focus:bg-teal-600">
+                            <span class="hs-stepper-success:hidden hs-stepper-completed:hidden">5</span>
+                            <svg class="hidden shrink-0 size-3 hs-stepper-success:block"
+                                xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round"
+                                stroke-linejoin="round">
+                                <polyline points="20 6 9 17 4 12"></polyline>
+                            </svg>
+                        </span>
+                        <span class="ms-2 text-sm font-medium text-gray-800">
+                            Step
+                        </span>
+                    </span>
+                    <div
+                        class="w-full h-px flex-1 bg-gray-200 group-last:hidden hs-stepper-success:bg-primary hs-stepper-completed:bg-teal-600">
+                    </div>
+                </li>
+                <!-- End Item -->
+            </ul>
+            <!-- End Stepper Nav -->
+
+            <!-- Stepper Content -->
+            <div class="mt-5 sm:mt-8">
+                <!-- First Content -->
+                <div data-hs-stepper-content-item='{
+                        "index": 1
+                    }'>
+                    <div
+                        class="p-8 bg-gray-50 flex flex-col justify-center items-center border border-dashed border-gray-200 rounded-xl">
+                        <h3 class="text-gray-900 mb-8 text-xl">
+                            What type of therapy are you looking for?
+                        </h3>
+                        <div class="grid w-full max-w-xs space-y-2 mb-6">
+                            <label for="hs-type-individual-checked-in-form"
+                                class="flex items-center p-3 w-full bg-white font-medium border border-gray-200 rounded-lg text-sm">
+                                <input type="radio" name="hs-type-radio-in-form"
+                                    class="relative size-4 appearance-none rounded-full border border-gray-300 bg-white before:absolute before:inset-1 before:rounded-full before:bg-white not-checked:before:hidden checked:border-primary checked:bg-primary focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary disabled:border-gray-300 disabled:bg-gray-100 disabled:before:bg-gray-400 forced-colors:appearance-auto forced-colors:before:hidden"
+                                    id="hs-type-individual-checked-in-form" checked>
+                                <span class="text-sm text-gray-500 ms-3">Individual (for myself)</span>
+                            </label>
+                            <label for="hs-type-couple-in-form"
+                                class="flex items-center p-3 w-full bg-white font-medium border border-gray-200 rounded-lg text-sm">
+                                <input type="radio" name="hs-type-radio-in-form"
+                                    class="relative size-4 appearance-none rounded-full border border-gray-300 bg-white before:absolute before:inset-1 before:rounded-full before:bg-white not-checked:before:hidden checked:border-primary checked:bg-primary focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary disabled:border-gray-300 disabled:bg-gray-100 disabled:before:bg-gray-400 forced-colors:appearance-auto forced-colors:before:hidden"
+                                    id="hs-type-couple-in-form">
+                                <span class=" text-sm text-gray-500 ms-3">Couples (for myself and my partner)</span>
+                            </label>
+                            <label for="hs-type-instant-in-form"
+                                class="flex items-center p-3 w-full bg-white font-medium border border-gray-200 rounded-lg text-sm">
+                                <input type="radio" name="hs-type-radio-in-form"
+                                    class="relative size-4 appearance-none rounded-full border border-gray-300 bg-white before:absolute before:inset-1 before:rounded-full before:bg-white not-checked:before:hidden checked:border-primary checked:bg-primary focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary disabled:border-gray-300 disabled:bg-gray-100 disabled:before:bg-gray-400 forced-colors:appearance-auto forced-colors:before:hidden"
+                                    id="hs-type-instant-in-form">
+                                <span class=" text-sm text-gray-500 ms-3">Instant</span>
+                            </label>
+                            <label for="hs-type-plus-in-form"
+                                class="flex items-center p-3 w-full bg-white font-medium border border-gray-200 rounded-lg text-sm">
+                                <input type="radio" name="hs-type-radio-in-form"
+                                    class="relative size-4 appearance-none rounded-full border border-gray-300 bg-white before:absolute before:inset-1 before:rounded-full before:bg-white not-checked:before:hidden checked:border-primary checked:bg-primary focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary disabled:border-gray-300 disabled:bg-gray-100 disabled:before:bg-gray-400 forced-colors:appearance-auto forced-colors:before:hidden"
+                                    id="hs-type-plus-in-form">
+                                <span class=" text-sm text-gray-500 ms-3">Plus</span>
+                            </label>
+                        </div>
+                        <div class="max-w-md bg-rose-100 text-sm text-gray-500 rounded-lg p-4" role="alert"
+                            tabindex="-1" aria-labelledby="hs-link-on-right-label">
+                            <div class="flex">
+                                <div class="shrink-0 text-primary">
+                                    <svg class="shrink-0 size-4 mt-0.5" xmlns="http://www.w3.org/2000/svg" width="24"
+                                        height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                        stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                        <circle cx="12" cy="12" r="10"></circle>
+                                        <path d="M12 16v-4"></path>
+                                        <path d="M12 8h.01"></path>
+                                    </svg>
+                                </div>
+                                <div class="flex text-start ms-2">
+                                    <p id="hs-link-on-right-label" class="text-sm">
+                                        Let's walk through the process of finding the best therapist for you! We'll
+                                        start off with some basic questions.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- End First Content -->
+
+                <!-- Second Content -->
+                <div data-hs-stepper-content-item='{
+                        "index": 2
+                    }' style="display: none;">
+                    <div
+                        class="p-8 bg-gray-50 flex flex-col justify-center items-center border border-dashed border-gray-200 rounded-xl">
+                        <h3 class="text-gray-900 mb-8 text-xl">
+                            What is your gender identity?
+                        </h3>
+                        <div class="grid w-full max-w-xs space-y-2 mb-6">
+                            <label for="hs-gender-radio-checked-in-form"
+                                class="flex items-center p-3 w-full bg-white font-medium border border-gray-200 rounded-lg text-sm">
+                                <input type="radio" name="hs-gender-radio-in-form"
+                                    class="relative size-4 appearance-none rounded-full border border-gray-300 bg-white before:absolute before:inset-1 before:rounded-full before:bg-white not-checked:before:hidden checked:border-primary checked:bg-primary focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary disabled:border-gray-300 disabled:bg-gray-100 disabled:before:bg-gray-400 forced-colors:appearance-auto forced-colors:before:hidden"
+                                    id="hs-gender-radio-checked-in-form" checked>
+                                <span class="text-sm text-gray-500 ms-3">Woman</span>
+                            </label>
+                            <label for="hs-gender-radio-in-form"
+                                class="flex items-center p-3 w-full bg-white font-medium border border-gray-200 rounded-lg text-sm">
+                                <input type="radio" name="hs-gender-radio-in-form"
+                                    class="relative size-4 appearance-none rounded-full border border-gray-300 bg-white before:absolute before:inset-1 before:rounded-full before:bg-white not-checked:before:hidden checked:border-primary checked:bg-primary focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary disabled:border-gray-300 disabled:bg-gray-100 disabled:before:bg-gray-400 forced-colors:appearance-auto forced-colors:before:hidden"
+                                    id="hs-gender-radio-in-form">
+                                <span class=" text-sm text-gray-500 ms-3">Man</span>
+                            </label>
+                        </div>
+                        <div class="max-w-md bg-rose-100 text-sm text-gray-500 rounded-lg p-4" role="alert"
+                            tabindex="-1" aria-labelledby="hs-link-on-right-label">
+                            <div class="flex">
+                                <div class="shrink-0 text-primary">
+                                    <svg class="shrink-0 size-4 mt-0.5" xmlns="http://www.w3.org/2000/svg" width="24"
+                                        height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                        stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                        <circle cx="12" cy="12" r="10"></circle>
+                                        <path d="M12 16v-4"></path>
+                                        <path d="M12 8h.01"></path>
+                                    </svg>
+                                </div>
+                                <div class="flex text-start ms-2">
+                                    <p id="hs-link-on-right-label" class="text-sm">
+                                        Gender plays an important role in shaping personal identity and experiences.
+                                        This information will help your therapist create a more personalized approach.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- End Second Content -->
+
+                <!-- Thrird Content -->
+                <div data-hs-stepper-content-item='{
+                        "index": 3
+                    }' style="display: none;">
+                    <div
+                        class="p-8 bg-gray-50 flex flex-col justify-center items-center border border-dashed border-gray-200 rounded-xl">
+                        <h3 class="text-gray-900 mb-8 text-xl">
+                            How old are you?
+                        </h3>
+                        <div class="grid w-full max-w-xs space-y-2 mb-6">
+                            <select
+                                class="py-3 px-4 pe-9 block w-full font-medium bg-white border border-gray-300 text-gray-500 sm:text-sm rounded-lg text-sm disabled:opacity-50 disabled:pointer-events-none">
+                                <option selected="">Select your age</option>
+                                <option>13</option>
+                                <option>14</option>
+                                <option>15</option>
+                                <option>16</option>
+                                <option>17</option>
+                                <option>18</option>
+                                <option>19</option>
+                                <option>20</option>
+                                <option>21</option>
+                                <option>22</option>
+                                <option>23</option>
+                                <option>24</option>
+                                <option>25</option>
+                                <option>26</option>
+                                <option>27</option>
+                                <option>28</option>
+                                <option>29</option>
+                                <option>30</option>
+                                <option>31</option>
+                                <option>32</option>
+                                <option>33</option>
+                                <option>34</option>
+                                <option>35</option>
+                                <option>36</option>
+                                <option>37</option>
+                                <option>38</option>
+                                <option>39</option>
+                                <option>40</option>
+                                <option>41</option>
+                                <option>42</option>
+                                <option>43</option>
+                                <option>44</option>
+                                <option>45</option>
+                                <option>46</option>
+                                <option>47</option>
+                                <option>48</option>
+                                <option>49</option>
+                                <option>50</option>
+                                <option>51</option>
+                                <option>52</option>
+                                <option>53</option>
+                                <option>54</option>
+                                <option>55</option>
+                                <option>56</option>
+                                <option>57</option>
+                                <option>58</option>
+                                <option>59</option>
+                                <option>60</option>
+                                <option>61</option>
+                                <option>62</option>
+                                <option>63</option>
+                                <option>64</option>
+                                <option>65</option>
+                                <option>66</option>
+                                <option>67</option>
+                                <option>68</option>
+                                <option>69</option>
+                                <option>70</option>
+                                <option>71</option>
+                                <option>72</option>
+                                <option>73</option>
+                                <option>74</option>
+                                <option>75</option>
+                                <option>76</option>
+                                <option>77</option>
+                                <option>78</option>
+                                <option>79</option>
+                                <option>80</option>
+                                <option>81</option>
+                                <option>82</option>
+                                <option>83</option>
+                                <option>84</option>
+                                <option>85</option>
+                                <option>86</option>
+                                <option>87</option>
+                                <option>88</option>
+                                <option>89</option>
+                                <option>90</option>
+                                <option>91</option>
+                                <option>92</option>
+                                <option>93</option>
+                                <option>94</option>
+                                <option>95</option>
+                                <option>96</option>
+                                <option>97</option>
+                                <option>98</option>
+                                <option>99</option>
+                            </select>
+                        </div>
+                        <div class="max-w-md bg-rose-100 text-sm text-gray-500 rounded-lg p-4" role="alert"
+                            tabindex="-1" aria-labelledby="hs-link-on-right-label">
+                            <div class="flex">
+                                <div class="shrink-0 text-primary">
+                                    <svg class="shrink-0 size-4 mt-0.5" xmlns="http://www.w3.org/2000/svg" width="24"
+                                        height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                        stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                        <circle cx="12" cy="12" r="10"></circle>
+                                        <path d="M12 16v-4"></path>
+                                        <path d="M12 8h.01"></path>
+                                    </svg>
+                                </div>
+                                <div class="flex flex-col text-start ms-2">
+                                    <h3 id="hs-discovery-label" class="text-primary font-semibold">
+                                        Did you know?
+                                    </h3>
+                                    <p id="hs-link-on-right-label" class="text-sm">
+                                        Almost a fifth of older adults in the United States have experienced depression.
+                                        (Geriatric Mental Health Foundation, 2008)
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- End Thrird Content -->
+
+                <!-- Thrird Content -->
+                <div data-hs-stepper-content-item='{
+                        "index": 4
+                    }' style="display: none;">
+                    <div
+                        class="p-8 bg-gray-50 flex flex-col justify-center items-center border border-dashed border-gray-200 rounded-xl">
+                        <h3 class="text-gray-900 mb-4 text-xl">
+                            What led you to consider therapy today?
+                        </h3>
+                        <div class="grid w-full max-w-md space-y-2 mb-6">
+                            <div class="space-y-4 text-sm">
+                                <label for="Option1" class="flex cursor-pointer items-center gap-4 text-start">
+                                    <div class="group grid size-4 grid-cols-1">
+                                        <input id="Option1" aria-describedby="comments-description" name="comments"
+                                            type="checkbox"
+                                            class="col-start-1 row-start-1 appearance-none rounded-sm border border-gray-500 bg-white checked:border-primary checked:bg-primary indeterminate:border-primary indeterminate:bg-primary focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary disabled:border-gray-300 disabled:bg-gray-100 disabled:checked:bg-gray-100 forced-colors:appearance-auto">
+                                        <svg class="pointer-events-none col-start-1 row-start-1 size-3.5 self-center justify-self-center stroke-white group-has-disabled:stroke-gray-950/25"
+                                            viewBox="0 0 14 14" fill="none">
+                                            <path class="opacity-0 group-has-checked:opacity-100" d="M3 8L6 11L11 3.5"
+                                                stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                                            <path class="opacity-0 group-has-indeterminate:opacity-100" d="M3 7H11"
+                                                stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                                        </svg>
+                                    </div>
+                                    <div>
+                                        <strong class="font-medium text-gray-500"> I've been feeling depressed </strong>
+                                    </div>
+                                </label>
+                                <label for="Option2" class="flex cursor-pointer items-start gap-4 text-start">
+                                    <div class="group grid size-4 grid-cols-1">
+                                        <input id="Option2" aria-describedby="comments-description" name="comments"
+                                            type="checkbox"
+                                            class="col-start-1 row-start-1 appearance-none rounded-sm border border-gray-500 bg-white checked:border-primary checked:bg-primary indeterminate:border-primary indeterminate:bg-primary focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary disabled:border-gray-300 disabled:bg-gray-100 disabled:checked:bg-gray-100 forced-colors:appearance-auto">
+                                        <svg class="pointer-events-none col-start-1 row-start-1 size-3.5 self-center justify-self-center stroke-white group-has-disabled:stroke-gray-950/25"
+                                            viewBox="0 0 14 14" fill="none">
+                                            <path class="opacity-0 group-has-checked:opacity-100" d="M3 8L6 11L11 3.5"
+                                                stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                                            <path class="opacity-0 group-has-indeterminate:opacity-100" d="M3 7H11"
+                                                stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                                        </svg>
+                                    </div>
+                                    <div>
+                                        <strong class="font-medium text-gray-500"> I feel anxious or overhelmed
+                                        </strong>
+                                    </div>
+                                </label>
+                                <label for="Option3" class="flex cursor-pointer items-start gap-4 text-start">
+                                    <div class="group grid size-4 grid-cols-1">
+                                        <input id="Option3" aria-describedby="comments-description" name="comments"
+                                            type="checkbox"
+                                            class="col-start-1 row-start-1 appearance-none rounded-sm border border-gray-500 bg-white checked:border-primary checked:bg-primary indeterminate:border-primary indeterminate:bg-primary focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary disabled:border-gray-300 disabled:bg-gray-100 disabled:checked:bg-gray-100 forced-colors:appearance-auto">
+                                        <svg class="pointer-events-none col-start-1 row-start-1 size-3.5 self-center justify-self-center stroke-white group-has-disabled:stroke-gray-950/25"
+                                            viewBox="0 0 14 14" fill="none">
+                                            <path class="opacity-0 group-has-checked:opacity-100" d="M3 8L6 11L11 3.5"
+                                                stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                                            <path class="opacity-0 group-has-indeterminate:opacity-100" d="M3 7H11"
+                                                stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                                        </svg>
+                                    </div>
+                                    <div>
+                                        <strong class="font-medium text-gray-500"> My mood is interfering with my
+                                            job/school performance </strong>
+                                    </div>
+                                </label>
+                                <label for="Option4" class="flex cursor-pointer items-start gap-4 text-start">
+                                    <div class="group grid size-4 grid-cols-1">
+                                        <input id="Option4" aria-describedby="comments-description" name="comments"
+                                            type="checkbox"
+                                            class="col-start-1 row-start-1 appearance-none rounded-sm border border-gray-500 bg-white checked:border-primary checked:bg-primary indeterminate:border-primary indeterminate:bg-primary focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary disabled:border-gray-300 disabled:bg-gray-100 disabled:checked:bg-gray-100 forced-colors:appearance-auto">
+                                        <svg class="pointer-events-none col-start-1 row-start-1 size-3.5 self-center justify-self-center stroke-white group-has-disabled:stroke-gray-950/25"
+                                            viewBox="0 0 14 14" fill="none">
+                                            <path class="opacity-0 group-has-checked:opacity-100" d="M3 8L6 11L11 3.5"
+                                                stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                                            <path class="opacity-0 group-has-indeterminate:opacity-100" d="M3 7H11"
+                                                stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                                        </svg>
+                                    </div>
+                                    <div>
+                                        <strong class="font-medium text-gray-500">
+                                            I struggle with building or maintaining relationships
+                                        </strong>
+                                    </div>
+                                </label>
+                                <label for="Option5" class="flex cursor-pointer items-start gap-4 text-start">
+                                    <div class="group grid size-4 grid-cols-1">
+                                        <input id="Option5" aria-describedby="comments-description" name="comments"
+                                            type="checkbox"
+                                            class="col-start-1 row-start-1 appearance-none rounded-sm border border-gray-500 bg-white checked:border-primary checked:bg-primary indeterminate:border-primary indeterminate:bg-primary focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary disabled:border-gray-300 disabled:bg-gray-100 disabled:checked:bg-gray-100 forced-colors:appearance-auto">
+                                        <svg class="pointer-events-none col-start-1 row-start-1 size-3.5 self-center justify-self-center stroke-white group-has-disabled:stroke-gray-950/25"
+                                            viewBox="0 0 14 14" fill="none">
+                                            <path class="opacity-0 group-has-checked:opacity-100" d="M3 8L6 11L11 3.5"
+                                                stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                                            <path class="opacity-0 group-has-indeterminate:opacity-100" d="M3 7H11"
+                                                stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                                        </svg>
+                                    </div>
+                                    <div>
+                                        <strong class="font-medium text-gray-500">
+                                            I can't find purpose and meaning in my life
+                                        </strong>
+                                    </div>
+                                </label>
+                                <label for="Option6" class="flex cursor-pointer items-start gap-4 text-start">
+                                    <div class="group grid size-4 grid-cols-1">
+                                        <input id="Option6" aria-describedby="comments-description" name="comments"
+                                            type="checkbox"
+                                            class="col-start-1 row-start-1 appearance-none rounded-sm border border-gray-500 bg-white checked:border-primary checked:bg-primary indeterminate:border-primary indeterminate:bg-primary focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary disabled:border-gray-300 disabled:bg-gray-100 disabled:checked:bg-gray-100 forced-colors:appearance-auto">
+                                        <svg class="pointer-events-none col-start-1 row-start-1 size-3.5 self-center justify-self-center stroke-white group-has-disabled:stroke-gray-950/25"
+                                            viewBox="0 0 14 14" fill="none">
+                                            <path class="opacity-0 group-has-checked:opacity-100" d="M3 8L6 11L11 3.5"
+                                                stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                                            <path class="opacity-0 group-has-indeterminate:opacity-100" d="M3 7H11"
+                                                stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                                        </svg>
+                                    </div>
+                                    <div>
+                                        <strong class="font-medium text-gray-500">
+                                            I have experienced trauma
+                                        </strong>
+                                    </div>
+                                </label>
+                                <label for="Option7" class="flex cursor-pointer items-start gap-4 text-start">
+                                    <div class="group grid size-4 grid-cols-1">
+                                        <input id="Option7" aria-describedby="comments-description" name="comments"
+                                            type="checkbox"
+                                            class="col-start-1 row-start-1 appearance-none rounded-sm border border-gray-500 bg-white checked:border-primary checked:bg-primary indeterminate:border-primary indeterminate:bg-primary focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary disabled:border-gray-300 disabled:bg-gray-100 disabled:checked:bg-gray-100 forced-colors:appearance-auto">
+                                        <svg class="pointer-events-none col-start-1 row-start-1 size-3.5 self-center justify-self-center stroke-white group-has-disabled:stroke-gray-950/25"
+                                            viewBox="0 0 14 14" fill="none">
+                                            <path class="opacity-0 group-has-checked:opacity-100" d="M3 8L6 11L11 3.5"
+                                                stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                                            <path class="opacity-0 group-has-indeterminate:opacity-100" d="M3 7H11"
+                                                stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                                        </svg>
+                                    </div>
+                                    <div>
+                                        <strong class="font-medium text-gray-500">
+                                            I want to gain self confidence
+                                        </strong>
+                                    </div>
+                                </label>
+                                <label for="Option8" class="flex cursor-pointer items-start gap-4 text-start">
+                                    <div class="group grid size-4 grid-cols-1">
+                                        <input id="Option8" aria-describedby="comments-description" name="comments"
+                                            type="checkbox"
+                                            class="col-start-1 row-start-1 appearance-none rounded-sm border border-gray-500 bg-white checked:border-primary checked:bg-primary indeterminate:border-primary indeterminate:bg-primary focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary disabled:border-gray-300 disabled:bg-gray-100 disabled:checked:bg-gray-100 forced-colors:appearance-auto">
+                                        <svg class="pointer-events-none col-start-1 row-start-1 size-3.5 self-center justify-self-center stroke-white group-has-disabled:stroke-gray-950/25"
+                                            viewBox="0 0 14 14" fill="none">
+                                            <path class="opacity-0 group-has-checked:opacity-100" d="M3 8L6 11L11 3.5"
+                                                stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                                            <path class="opacity-0 group-has-indeterminate:opacity-100" d="M3 7H11"
+                                                stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                                        </svg>
+                                    </div>
+                                    <div>
+                                        <strong class="font-medium text-gray-500">
+                                            I want to improve my self but I don't know where to start
+                                        </strong>
+                                    </div>
+                                </label>
+                            </div>
+                        </div>
+                        <div class="max-w-md bg-rose-100 text-sm text-gray-500 rounded-lg p-4" role="alert"
+                            tabindex="-1" aria-labelledby="hs-link-on-right-label">
+                            <div class="flex">
+                                <div class="shrink-0 text-primary">
+                                    <svg class="shrink-0 size-4 mt-0.5" xmlns="http://www.w3.org/2000/svg" width="24"
+                                        height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                        stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                        <circle cx="12" cy="12" r="10"></circle>
+                                        <path d="M12 16v-4"></path>
+                                        <path d="M12 8h.01"></path>
+                                    </svg>
+                                </div>
+                                <div class="flex flex-col text-start ms-2">
+                                    </h3>
+                                    <p id="hs-link-on-right-label" class="text-sm">
+                                        This is a preliminary question to understand what you are going through, you
+                                        will have more opportunities to explain or elaborate on your feelings and
+                                        challenges later on.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- End Thrird Content -->
+
+                <!-- Fourth Content -->
+                <div data-hs-stepper-content-item='{
+                        "index": 5
+                    }' style="display: none;">
+                    <div
+                        class="p-8 bg-gray-50 flex flex-col justify-center items-center border border-dashed border-gray-200 rounded-xl">
+                        <h3 class="text-gray-900 mb-4 text-xl">
+                            Choose a counseling place
+                        </h3>
+                        <div class="grid w-full max-w-md space-y-2 mb-6">
+                            <label for="hs-cafe-checked-in-form"
+                                class="flex items-center p-3 w-full bg-white font-medium border border-gray-200 rounded-lg text-sm">
+                                <input type="radio" name="hs-type-radio-in-form"
+                                    class="relative size-4 appearance-none rounded-full border border-gray-300 bg-white before:absolute before:inset-1 before:rounded-full before:bg-white not-checked:before:hidden checked:border-primary checked:bg-primary focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary disabled:border-gray-300 disabled:bg-gray-100 disabled:before:bg-gray-400 forced-colors:appearance-auto forced-colors:before:hidden"
+                                    id="hs-cafe-checked-in-form" checked>
+                                <span class="text-sm text-gray-500 ms-3">Cafe</span>
+                            </label>
+                            <label for="hs-taman-in-form"
+                                class="flex items-center p-3 w-full bg-white font-medium border border-gray-200 rounded-lg text-sm">
+                                <input type="radio" name="hs-type-radio-in-form"
+                                    class="relative size-4 appearance-none rounded-full border border-gray-300 bg-white before:absolute before:inset-1 before:rounded-full before:bg-white not-checked:before:hidden checked:border-primary checked:bg-primary focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary disabled:border-gray-300 disabled:bg-gray-100 disabled:before:bg-gray-400 forced-colors:appearance-auto forced-colors:before:hidden"
+                                    id="hs-taman-in-form">
+                                <span class=" text-sm text-gray-500 ms-3">Taman</span>
+                            </label>
+                            <label for="hs-ruang-in-form"
+                                class="flex items-center p-3 w-full bg-white font-medium border border-gray-200 rounded-lg text-sm">
+                                <input type="radio" name="hs-type-radio-in-form"
+                                    class="relative size-4 appearance-none rounded-full border border-gray-300 bg-white before:absolute before:inset-1 before:rounded-full before:bg-white not-checked:before:hidden checked:border-primary checked:bg-primary focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary disabled:border-gray-300 disabled:bg-gray-100 disabled:before:bg-gray-400 forced-colors:appearance-auto forced-colors:before:hidden"
+                                    id="hs-ruang-in-form">
+                                <span class=" text-sm text-gray-500 ms-3">Ruang Konseling</span>
+                            </label>
+                            <label for="hs-rumah-in-form"
+                                class="flex items-center p-3 w-full bg-white font-medium border border-gray-200 rounded-lg text-sm">
+                                <input type="radio" name="hs-type-radio-in-form"
+                                    class="relative size-4 appearance-none rounded-full border border-gray-300 bg-white before:absolute before:inset-1 before:rounded-full before:bg-white not-checked:before:hidden checked:border-primary checked:bg-primary focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary disabled:border-gray-300 disabled:bg-gray-100 disabled:before:bg-gray-400 forced-colors:appearance-auto forced-colors:before:hidden"
+                                    id="hs-rumah-in-form">
+                                <span class=" text-sm text-gray-500 ms-3">Rumah</span>
+                            </label>
+                        </div>
+                        <div class="max-w-md w-full space-y-3">
+                            <textarea name="address" id="address" rows="3" placeholder="Enter the address"
+                                class="block w-full rounded-md bg-white px-3 py-1.5 text-base text-gray-900 outline-1 -outline-offset-1 outline-gray-200 placeholder:text-gray-400 focus:outline-2 focus:-outline-offset-2 focus:outline-primary sm:text-sm/6"></textarea>
+                            <div>
+                                <div class="relative">
+                                    <input type="email" id="hs-leading-icon" name="hs-leading-icon"
+                                        class="py-3 px-4 ps-11 block w-full rounded-md bg-white text-base text-gray-900 outline-1 -outline-offset-1 outline-gray-200 placeholder:text-gray-400 focus:outline-2 focus:-outline-offset-2 focus:outline-primary sm:text-sm/6"
+                                        placeholder="Email">
+                                    <div
+                                        class="absolute inset-y-0 start-0 flex items-center pointer-events-none z-20 ps-4">
+                                        <svg class="shrink-0 size-4 text-gray-400" xmlns="http://www.w3.org/2000/svg"
+                                            width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                            stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                            <rect width="20" height="16" x="2" y="4" rx="2"></rect>
+                                            <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"></path>
+                                        </svg>
+                                    </div>
+                                </div>
+                            </div>
+                            <div>
+                                <div class="relative">
+                                    <input type="text" id="hs-leading-icon" name="hs-leading-icon"
+                                        class="py-3 px-4 ps-11 block w-full rounded-md bg-white text-base text-gray-900 outline-1 -outline-offset-1 outline-gray-200 placeholder:text-gray-400 focus:outline-2 focus:-outline-offset-2 focus:outline-primary sm:text-sm/6"
+                                        placeholder="Phone Number (Whatsapp)">
+                                    <div
+                                        class="absolute inset-y-0 start-0 flex items-center pointer-events-none z-20 ps-4">
+                                        <svg class="shrink-0 text-gray-400 size-4" xmlns="http://www.w3.org/2000/svg"
+                                            width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                            stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                                            class="lucide lucide-phone">
+                                            <path
+                                                d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z" />
+                                        </svg>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- End Fourth Content -->
+
+                <!-- Final Content -->
+                <div data-hs-stepper-content-item='{
+                    "isFinal": true
+                    }' style="display: none;">
+                    <div
+                        class="p-8 h-48 bg-gray-50 flex justify-center items-center border border-dashed border-green-500 rounded-xl">
+                        <h3 class="text-gray-500">
+                            Your therapy request has been submitted. We will contact you soon.
+                        </h3>
+                    </div>
+                </div>
+                <!-- End Final Content -->
+
+                <!-- Button Group -->
+                <div class="mt-5 flex justify-between items-center gap-x-2">
+                    <button type="button"
+                        class="py-2 px-3 inline-flex items-center gap-x-1 text-sm font-medium rounded-lg border border-gray-200 bg-white text-gray-800 shadow-sm hover:bg-gray-50 focus:outline-none focus:bg-gray-50 disabled:opacity-50 disabled:pointer-events-none"
+                        data-hs-stepper-back-btn="">
+                        <svg class="shrink-0 size-4" xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                            viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                            stroke-linecap="round" stroke-linejoin="round">
+                            <path d="m15 18-6-6 6-6"></path>
+                        </svg>
+                        Back
+                    </button>
+                    <button type="button"
+                        class="py-2 px-3 inline-flex items-center gap-x-1 text-sm font-medium rounded-lg border border-transparent bg-primary text-white hover:bg-rose-400 focus:outline-none focus:bg-rose-400 disabled:opacity-50 disabled:pointer-events-none"
+                        data-hs-stepper-next-btn="">
+                        Next
+                        <svg class="shrink-0 size-4" xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                            viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                            stroke-linecap="round" stroke-linejoin="round">
+                            <path d="m9 18 6-6-6-6"></path>
+                        </svg>
+                    </button>
+                    <button type="button"
+                        class="py-2 px-3 inline-flex items-center gap-x-1 text-sm font-medium rounded-lg border border-transparent bg-primary text-white hover:bg-rose-400 focus:outline-none focus:bg-rose-400 disabled:opacity-50 disabled:pointer-events-none"
+                        data-hs-stepper-finish-btn="" style="display: none;">
+                        Finish
+                    </button>
+                    <button type="reset"
+                        class="inline-flex items-center gap-x-1 text-sm font-medium border border-transparent focus:outline-none disabled:opacity-50 disabled:pointer-events-none"
+                        data-hs-stepper-reset-btn="" style="display: none;">
+                        <a href="./../../index.html"
+                            class="py-2 px-3 bg-primary text-white hover:bg-rose-400 focus:bg-rose-400 rounded-lg">
+                            Back to Home
+                        </a>
+                    </button>
+                </div>
+                <!-- End Button Group -->
+            </div>
+            <!-- End Stepper Content -->
+        </div>
+        <!-- End Stepper -->
+    </div>
+
+    <script src="./../../node_modules/preline/dist/preline.js"></script>
+</body>
+
+</html>
